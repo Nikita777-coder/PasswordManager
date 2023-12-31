@@ -1,0 +1,7 @@
+traces:
+  configs:
+    remote_write:
+      - endpoint: http://localhost:3000/goto/FfwNwCNIR?orgId=1
+        basic_auth:
+          username: admin
+          password: admin
