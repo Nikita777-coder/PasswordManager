@@ -15,7 +15,7 @@ public class OpenApiConfiguration {
         return new OpenAPI().addSecurityItem(
                 new SecurityRequirement().addList("Bearer Authentication")
         ).components(new Components().addSecuritySchemes("Bearer Authentication", createAPIKeySchema()))
-                .info(new Info().title("Record REST API"));
+                .info(new Info().title("Password Manager"));
     }
 
     private SecurityScheme createAPIKeySchema() {
