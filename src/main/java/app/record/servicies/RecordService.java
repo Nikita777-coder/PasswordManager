@@ -71,12 +71,14 @@ public class RecordService {
         return recordMapper.recordEntityToOutputData(getRecordById(id));
     }
     @Transactional(isolation = Isolation.SERIALIZABLE)
-    public RecordOutputData updateRecordById(UUID id, RecordEntity record) {
+    public RecordOutputData updateRecordById(UUID id, RecordData record) {
         RecordEntity foundEntity = getRecordById(id);
 
-        record.setId(foundEntity.getId());
+        RecordEntity updatedRecord = recordMapper.recordDataToEntity(record);
+        updatedRecord.setId(foundEntity.getId());
+        addDirectoryToNewRecord(updatedRecord, record.getDirectoryParentId());
 
-        return recordMapper.recordEntityToOutputData(recordRepository.save(record));
+        return recordMapper.recordEntityToOutputData(recordRepository.save(updatedRecord));
     }
     private RecordEntity getRecordById(UUID id) {
         UserDetails currentUserDetails = userService.getCurrentUser();

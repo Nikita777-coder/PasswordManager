@@ -55,7 +55,7 @@ public class RecordController {
     @PatchMapping("/{record_id}")
     public @ResponseBody ResponseEntity<RecordOutputData> updateRecordById(
             @PathVariable UUID record_id,
-            @Valid @RequestBody RecordEntity record)
+            @Valid @RequestBody RecordData record)
     {
         RecordOutputData resultEntity = recordService.updateRecordById(record_id, record);
 

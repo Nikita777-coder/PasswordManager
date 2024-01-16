@@ -10,31 +10,32 @@ Password Manager - password storage REST service
 
 ## What you can do in it
 + Create a new account
-  ![img_1.png](readme_images/img_1.png)
+> <img src="readme_images/img_1.png" alt="drawing" width="700"/>
 + Sign in
-  ![img_2.png](readme_images/img_2.png)
+> <img src="readme_images/img_2.png" alt="drawing" width="700"/>
 + Create a new password record
-  ![img_3.png](readme_images/img_3.png)
+> <img src="readme_images/img_3.png" alt="drawing" width="700"/>
 + Get your own list of records
-![img_4.png](readme_images/img_4.png)
+> <img src="readme_images/img_4.png" alt="drawing" width="700"/>
 + Get a specific record by its id
-![img_5.png](readme_images/img_5.png)
+> <img src="readme_images/img_5.png" alt="drawing" width="700"/>
 + Get info about password record directory
-![img_10.png](readme_images/img_10.png)
+> <img src="readme_images/img_10.png" alt="drawing" width="700"/>
 + Update a record by id - **переделать входные параметры (должен принимать не entity, а dto)**
+> <img src="readme_images/img7.png" alt="drawing" width="700"/>
 + Create a directory for records and other directories
-![img_6.png](readme_images/img_6.png)
+> <img src="readme_images/img_6.png" alt="drawing" width="700"/>
 
-you can skip parametr 'parentDirectoryId' or set null if parent directory is root
+> You can skip parametr 'parentDirectoryId' or set null if parent directory is root
 + Get short info about all records (id and name of record) in directory
-![img_11.png](readme_images/img_11.png)
+> <img src="readme_images/img_11.png" alt="drawing" width="700"/>
 + Get all nested directories in directory
-![img_12.png](readme_images/img_12.png)
+> <img src="readme_images/img_12.png" alt="drawing" width="700"/>
 + Get all attachments (nested records and directories) in directory
-![img_13.png](readme_images/img_13.png)
+> <img src="readme_images/img_13.png" alt="drawing" width="700"/>
 + Delete a directory
-![img_7.png](readme_images/img_7.png)
+> <img src="readme_images/img_7.png" alt="drawing" width="700"/>
 + Make sharing on record
-![img_8.png](readme_images/img_8.png)
+> <img src="readme_images/img_8.png" alt="drawing" width="700"/>
 + Get a sharing record from a person
-![img_9.png](readme_images/img_9.png)
+> <img src="readme_images/img_9.png" alt="drawing" width="700"/>
