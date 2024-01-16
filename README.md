@@ -5,6 +5,8 @@
 ## Description
 Password Manager - password storage REST service
 
+path for swagger after app launch: http://localhost:8080/swagger-ui/index.html#/
+
 ## Features
 - all requests are secured except auth-controller requests. That's why, firstly, you need authorize and enter a jwt token received from one of the auth-controller requests
 
